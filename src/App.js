@@ -1,13 +1,13 @@
-import { State } from "./hooks/State";
-import { Effect} from './hooks/Effect'
+// import { State } from "./hooks/State";
+// import { Effect} from './hooks/Effect'
+import {Books} from './components/Books'
+
+import { Context } from "./hooks/Context"; 
 
 function App() {
-  return (
-    <div className="App">
-      <State />
-      <Effect />
-    </div>
-  );
+  return <Context>
+    <Books /> 
+  </Context>
 }
 
 export default App;
